@@ -127,17 +127,6 @@ body::-webkit-scrollbar {
         bottom: 0px;
         border-radius: 0;
     }
-
-    .question-footer {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 25px;
-        margin-left: 25px;
-        margin-right: 25px;
-        border-top: 0;
-    }
-
     .impressum {
         position: relative;
         height: 100%;
@@ -167,6 +156,23 @@ body::-webkit-scrollbar {
         margin-top: 10px;
      
     }
-   
+    .question-footer {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 0;
+    
+    }
 }
 
+@media (max-height: 850px) {
+    .question-footer {
+        position: relative;
+    }
+
+}

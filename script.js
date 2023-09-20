@@ -14,7 +14,7 @@ function rendern() {
 }
 
 function loadMenu() {
-    toggelNavbar();
+  
     quiz_name = "";
     document.getElementById('highscore').innerHTML = "";
     document.getElementById('content').innerHTML = menu_card;
@@ -32,13 +32,12 @@ function loadMenu() {
 }
 
 function loadImpressum() {
-    toggelNavbar();
     document.getElementById('content').innerHTML = impressum;
     document.getElementById('highscore').innerHTML = "";
 }
 
 function loadHighscore() {
-    toggelNavbar();
+
     document.getElementById('content').innerHTML = "";
     document.getElementById('highscore').innerHTML = `
     <div class="highscore-tempalte card main-card">
@@ -82,11 +81,7 @@ function loadGame(quiz) {
 }
 
 function loadEndGame() {
-
-    createTemplateEndGame();
-
-
-
+     createTemplateEndGame();
     document.getElementById('quiz-name').innerHTML = quiz_name;
     document.getElementById('amount-of-question').innerHTML = quiz_section.length;
     document.getElementById('amount-of-right-questions').innerHTML = rightquestions;
@@ -195,12 +190,6 @@ function saveHighscore() {
 function showHighscore(quiz_name){
     loadHighscore();
     document.getElementById(`flush-collapse${quiz_name}`).classList.add('show');
-}
-
-function toggelNavbar(){
-//document.getElementById('navbarNavDropdown').classList.remove('show');
-//document.getElementById('navbarNavDropdown').classList.remove('collapse');
-
 }
 
 function saveAll() {
