@@ -3,8 +3,8 @@ let rightquestions = 0;
 let currentQuestion = 0;
 let quiz_section = "";
 let quiz_name = "";
-let AUDIO_RIGHT = new Audio('/audio/right.mp3');
-let AUDIO_WRONG = new Audio('/audio/wrong.mp3');
+let AUDIO_RIGHT = new Audio('./audio/right.mp3');
+let AUDIO_WRONG = new Audio('./audio/wrong.mp3');
 let next_question = true;
 
 
