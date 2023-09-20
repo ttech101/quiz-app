@@ -1,0 +1,172 @@
+body {
+    background-color: #4cc29b;
+    height: 100vh;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.main-card {
+    max-width: 25rem;
+}
+.menu_card{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    padding-top: 15px;
+}
+
+.quit-answer-card:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bg-success,
+.bg-danger {
+    color: white;
+}
+.accordion-button:focus{
+    box-shadow:none;
+}
+.form-control:focus{
+    box-shadow:none;
+}
+.width-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+
+}
+
+.final-headline {
+    font-size: 38px;
+    margin-bottom: 32px;
+}
+
+.button-reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.impressum {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.placeholder::placeholder {
+    color: red;
+    font-weight: 400;
+    border: 0;
+    padding: 0;
+}
+
+.placeholder_alert {
+    background-color: white;
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+.highscore-card{
+    display: flex;
+    justify-content: center; 
+}
+
+.highscore-tempalte {
+    margin-top: 25px;
+    width: 25em;
+}
+.highscore-tempalte img{
+    border-bottom: 1px solid #DEE2E6;
+}
+.list-group{
+    margin-top: 40px;
+}
+.card-title{
+    margin-bottom: 10px;
+}
+@media (max-width: 575px) {
+
+    body {
+        background-color: #FFFFFF;
+        height: 0;
+        overflow-x: visible;
+    }
+
+    .game-container {
+        position: relative;
+        height: inherit;
+        align-items: baseline;
+    }
+
+    .main-card {
+        position: relative;
+        max-width: 100%;
+        min-height: 0;
+        height: 100%;
+        bottom: 0px;
+        border-radius: 0;
+    }
+
+    .question-footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        border-top: 0;
+    }
+
+    .impressum {
+        position: relative;
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .border-0 {
+        border: 0;
+    }
+
+    .progress {
+        border-radius: 0;
+    }
+
+    .highscore-tempalte {
+        margin-top: 10px;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        border:0;
+    
+    }
+    .menu_card{
+        margin-top: 10px;
+     
+    }
+   
+}
+
