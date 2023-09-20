@@ -1,4 +1,4 @@
-//loadAll();
+loadAll();
 let rightquestions = 0;
 let currentQuestion = 0;
 let quiz_section = "";
